@@ -1,0 +1,10 @@
+{
+  "name": "capy-ai",
+  "version": "0.0.1",
+  "description": "CapyAgent: личный ИИ-агент на вашем компьютере. Пакет в разработке, установка на capyagent.ru.",
+  "keywords": ["capy", "capyagent", "agent", "telegram", "assistant"],
+  "homepage": "https://capyagent.ru",
+  "author": "Kirill Smolnikov",
+  "main": "index.js",
+  "files": ["index.js", "README.md"]
+}

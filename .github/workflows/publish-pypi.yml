@@ -9,6 +9,7 @@ on:
         type: choice
         options:
           - capyagent
+          - capy-ai
 
 jobs:
   publish:

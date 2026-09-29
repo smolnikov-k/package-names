@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "capy-ai"
+version = "0.0.1"
+description = "CapyAgent: личный ИИ-агент на вашем компьютере. Пакет в разработке, установка на capyagent.ru."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Kirill Smolnikov" }]
+keywords = ["capy", "capyagent", "agent", "telegram", "assistant"]
+
+[project.urls]
+Homepage = "https://capyagent.ru"
