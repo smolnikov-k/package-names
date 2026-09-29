@@ -14,7 +14,7 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    environment: pypi
+    environment: ${{ inputs.package == 'capy-ai' && 'pypi-capy-ai' || 'pypi' }}
     permissions:
       id-token: write
       contents: read
