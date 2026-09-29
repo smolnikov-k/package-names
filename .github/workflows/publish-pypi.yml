@@ -1,0 +1,29 @@
+name: publish-pypi
+
+on:
+  workflow_dispatch:
+    inputs:
+      package:
+        description: Package directory under pypi/
+        required: true
+        type: choice
+        options:
+          - capyagent
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+      - name: Build
+        working-directory: pypi/${{ inputs.package }}
+        run: |
+          python3 -m pip install --upgrade build
+          python3 -m build
+      - uses: pypa/gh-action-pypi-publish@v1.14.2
+        with:
+          packages-dir: pypi/${{ inputs.package }}/dist/

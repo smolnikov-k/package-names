@@ -1,0 +1,11 @@
+{
+  "name": "ameli",
+  "version": "0.0.1",
+  "description": "Ameli: языковая модель для агентных задач на русском. Клиент появится вместе с моделью, пока в разработке.",
+  "keywords": ["ameli", "llm", "agent", "russian", "tool-use"],
+  "homepage": "https://huggingface.co/smolnikov/ameli",
+  "repository": { "type": "git", "url": "git+https://github.com/smolnikov-k/ameli.git" },
+  "author": "Kirill Smolnikov",
+  "main": "index.js",
+  "files": ["index.js", "README.md"]
+}
